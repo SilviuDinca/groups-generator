@@ -1,0 +1,57 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groups generator</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"
+    />
+  </head>
+
+  <body class="light-theme">
+    <div class="random-container">
+      <div class="title-container">
+        <h2>Groups generator</h2>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <!-- TEXT INPUT -->
+      <div class="main-container">
+        <div class="left-column">
+          <div class="input-container">
+            <input
+              class="text-input"
+              type="text"
+              placeholder="Write the name of your task..."
+            />
+            <button class="add-button">
+              <span class="mdi mdi-plus-thick"></span>
+            </button>
+          </div>
+          <ul class="list"></ul>
+          <p class="names-placeholder">The list is empty</p>
+          <button class="generate">
+            <span class="mdi mdi-recycle"></span>
+            <b>Generate</b>
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="right-column">
+          <p class="groups-placeholder">No generated groups</p>
+          <div class="groups"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"
+    defer
+  ></script>
+  <script src="./assets/js/random.js" defer></script>
+</html>
